@@ -159,13 +159,13 @@ def recognize_gesture_cosine(test_feature, training_features, gesture_labels):
 
     return predicted_label, similarity_score
 
-def save_results(predicted_labels, filename="results.csv"):
+def save_results(predicted_labels, filename="Results.csv"):
     """
     Save predicted labels in a 51x1 matrix to CSV file (no header).
 
     Args:
         predicted_labels (list or array): List of predicted gesture labels
-        filename (str): Output CSV filename (default: "results.csv")
+        filename (str): Output CSV filename (default: "Results.csv")
     """
     # Ensure we have exactly 51 predictions
     if len(predicted_labels) != 51:
